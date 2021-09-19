@@ -94,39 +94,44 @@
         <h1>ノーコード(Bubble)によるWebアプリ開発５(8/11)</h1>
             <h2>TwitterのようなSNSアプリを作ってみよう(ユーザー登録画面の作成）＜その5＞</h2>
                 <p>画面左上のあるPage indexをクリックし,表示されたタブのAdd a new pageをクリックすると下記のような画面が表示される。<br>
-                    Page nameを「signup」に設定し、CREATEをクリックする。</p>
+                    Page nameを「signup」に設定し、CREATEをクリックする。<br></p>
                     <div>
                         <img src="images/blog7/image_01.jpg" alt="" width="300" height="175">
                     </div>
                 <p>signupのページが作成できたら、indexページの画面上記のタブをコピーし、signupページに同じ位置で貼り付ける。<br>
-                    右のタブのContainersのGroupをクリックし適当な大きさに調整、背景を白くしsignupページに貼り付ける。</p>
+                    右のタブのContainersのGroupをクリックし適当な大きさに調整、背景を白くしsignupページに貼り付ける。<br></p>
                     <div>
                         <img src="images/blog7/image_02.jpg" alt="" width="300" height="175">
                     </div>
-                <p>先ほど作成したGroup上にTextを配置し名前を「ユーザー登録」とする。</p>
+                <p>先ほど作成したgroup上にTextを配置し名前を「ユーザー登録」とする。<br></p>
                     <div>
                         <img src="images/blog7/image_03.jpg" alt="" width="300" height="175">
                     </div>
-                <p><br>
-                    Click here to add an actionをクリックし、Element ActionsのReset inputsを選択する。（下記画像上段）<br>
-                    最後のアクションはPopup画面を閉じる設定をする。<br>
-                    Click here to add an actionをクリックし、Element ActionsのHideを選択する。<br>
-                    表示されたプロパティのElementをPopup postに設定する。（下記画像下段）<br></p>
+                <p>次に、Input formsのinputをgroup上２つに配置し、Placeholderの名前を「email」と「password」に設定する。<br></p>
                     <div>
-                        <img src="images/blog5/image_7.jpg" alt="" width="300" height="175"><br>
-                        <img src="images/blog5/image_9.jpg" alt="" width="300" height="175">
+                        <img src="images/blog7/image_04.jpg" alt="" width="300" height="175">
                     </div>
-                <p>これで、投稿したい文章を入力しアプリケーションのデータベースに投稿される仕組みが完成した。<br>
-                    試しに、画面右上にあるPreviewをクリックし正常に動作するか確認した。<br>
-                    画面の右上にあるTweetボタンをクリックすると下記画像のようなPopupが表示され、文字を入力試投稿ボタンを押した。<br></p>
+                <p>先ほど作成したinputの下に「ユーザー登録する」というボタンを配置し、全体を整える。<br></p>
                     <div>
-                        <img src="images/blog5/image_10.jpg" alt="" width="300" height="175">
+                        <img src="images/blog7/image_05.jpg" alt="" width="300" height="175">
                     </div>
-                <p>すると、投稿内容が画面に表示され、Popupが自動で消えた。<br>
-                    これで一旦入力した文字の投稿が可能になる所まで進んだ。<br></p>
+                <p>これでユーザー登録画面の作成は終了！<br>
+                    次に、ユーザー登録ボタンのworkflowを作成する。<br>
+				　　 ユーザー登録ボタンのプロパティからworkflowを選択し画面が切り替わる。<br>
+					Click here to add an actionをクリックしAccountのSign the user upを選択する。<br>
+				 	表示されたプロパティのEmailは「input email's value」、Passwordは「input passwaord's value」に設定する。<br>
+					これで、emailとpasswordを入力することでユーザ登録ができるという機能が追加される。<br></p>
                     <div>
-                        <img src="images/blog5/image_11.jpg" alt="" width="300" height="175">
+                        <img src="images/blog7/image_06.jpg" alt="" width="300" height="175">
                     </div>
+				<p>最後にユーザー登録した後、表示されているフォームをクリアし、indexページに移動する処理をを追加する。<br>
+					Click here to add an actionをクリックしElement ActionsのReset inputsを選択する。<br>
+					さらに、Click here to add an actionをクリックしNavigationのGo to pageを選択する。<br>
+					表示されたプロパティのDestinationをindexに設定することで、自動的にindexページに移動するようになる。<br>
+					これにてユーザー登録画面とユーザー登録機能と処理が完成！<br></p>
+					<div>
+						<img src="images/blog7/image_07.jpg" alt="" width="300" height="175">
+					</div>
     </div>
 
 				<!-- jQuery -->
