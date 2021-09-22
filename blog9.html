@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ryugalabo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
+
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	
+	
+	<div id="fh5co-page">
+	<header id="fh5co-header" role="banner">
+		<div class="container">
+			<div class="header-inner">
+				<h1><a href="index.html">ryugalabo</a></h1>
+				<nav role="navigation">
+					<ul>
+						<li><a href="work.html">My Art Gallery</a></li>
+						<li><p><a href="recent.html">Recent From Blog</a></li>
+						<li><a href="about.html">About Me</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li class="cta"><a href="#">Get started</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	
+	<div class="container">
+    
+    <title>ノーコード(Bubble)によるWebアプリ開発７</title>
+    </head>         
+    <body>
+        <h1>ノーコード(Bubble)によるWebアプリ開発７(9/13)</h1>
+            <h2>TwitterのようなSNSアプリを作ってみよう(プローフィール画面の作成)＜その７＞</h2>
+                <p>Add a new pageをクリックしプロフィール画面を作成する。<br>
+                    Page nameを「profile」、Clone fromを「login」に設定し、CREATEをクリックする。</p>
+                    <div>
+                        <img src="images/blog9/image_1.jpg" alt="" width="300" height="175">
+                    </div>
+                <p>「ログイン」と書かれたテキストを「プロフィール」に、「ログインする」ボタンの名前を「保存する」に書き換える。<br>
+					「email」と書かれたinputを「名前」にし、プロパティ内のContent formatを「Text」に変更する。<br>
+					「password」のinputは自己紹介に変更するのだが、現在のinputでは１行しか書き込めない。<br>
+					そのため、Multikine Inputに変更し、Placeholderを「自己紹介」とし、下記画像のように配置する。</p>
+                    <div>
+                        <img src="images/blog9/image_2.jpg" alt="" width="300" height="175">
+                    </div>
+                <p>左側の空いたスペースに画像を差し込めるスペースを作る。<br>
+					右のタブのInput forms内にあるPicture Uploaderを配置する。<br></p>
+                    <div>
+                        <img src="images/blog9/image_3.jpg" alt="" width="300" height="175">
+                    </div>
+                <p>プロフィール画面の左上に矢印ボタンを配置し、戻るボタンを作成する。<br>
+					Visual elementsのiconを配置し、プロパティ内のiconで「left」と検索し下記画像の矢印を選択する。<br>
+					大きさを縦、横４０に設定し左上に配置する。これでプロフィールのデザインは完了！</p>
+                    <div>
+                        <img src="images/blog9/image_4.jpg" alt="" width="300" height="175">
+                    </div>
+                <p>次にデータベースタブとプロフィール画面の連結を行う。<br>
+					Dataタブをクリックし、Userをクリック。<br>
+					Creat a new fieldから「プロフィール画像」、「名前」、「自己紹介」という列を追加する。</p>
+                    <div>
+                        <img src="images/blog9/image_5.jpg" alt="" width="300" height="175">
+                    </div>
+                <p>まずプロフィール画像を作成する。<br>
+					Field nameを「image」、Field typeを「image」に設定し CREATEボタンで実行する。</p>
+                    <div>
+                        <img src="images/blog9/image_6.jpg" alt="" width="300" height="175">
+                    </div>
+				<p>次に、名前のフィールドも同様に作成していく。<br>
+					Field nameは「Name」、Field typeは「text」とする。</p>
+					<div>
+						<img src="images/blog9/image_7.jpg" alt="" width="300" height="175">
+					</div>
+				<p>最後の自己紹介も同様に作成する。<br>
+					Field nameは「Memo」、Field typeは「text」に設定する。</p>
+					<div>
+						<img src="images/blog9/image_8.jpg" alt="" width="300" height="175">
+					</div>
+				<p>次に、以前製作したユーザーの情報を変更する。<br>
+					Data内のApp　dataを選択し、All Usersを選択する。<br>
+					ここの以前登録したユーザーにNameを追加するため、Run asの隣にあるペンマークをクリックする。</p>
+					<div>
+						<img src="images/blog9/image_9.jpg" alt="" width="300" height="175">
+					</div>
+				<p>画面が切り替わると、Nameと書かれた欄があるのでここに名前を追加する。（今回はryugalabと設定する）</p>
+					<div>
+						<img src="images/blog9/image_10.jpg" alt="" width="300" height="175">
+					</div>
+				<p>「Saveを」クリックすると編集が完了したという画面が出るので、「GOT IT」というボタンもクリックする。<br>
+					すると先ほどの画面に戻り、Nameの欄に「ryugalab」という名前が反映される。
+					次回は、今回作成した列とプロフィール画面の機能をつなげる。</p>
+					<div>
+						<img src="images/blog8/image_11.jpg" alt="" width="300" height="175">
+					</div>
+    </div>
+
+				<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+    </body>
+</html>
