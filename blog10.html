@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ryugalabo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
+
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	
+	
+	<div id="fh5co-page">
+	<header id="fh5co-header" role="banner">
+		<div class="container">
+			<div class="header-inner">
+				<h1><a href="index.html">ryugalabo</a></h1>
+				<nav role="navigation">
+					<ul>
+						<li><a href="work.html">My Art Gallery</a></li>
+						<li><p><a href="recent.html">Recent From Blog</a></li>
+						<li><a href="about.html">About Me</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li class="cta"><a href="#">Get started</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	
+	<div class="container">
+    
+    <title>ノーコード(Bubble)によるWebアプリ開発８</title>
+    </head>         
+    <body>
+        <h1>ノーコード(Bubble)によるWebアプリ開発８(9/21)</h1>
+            <h2>TwitterのようなSNSアプリを作ってみよう(プローフィール画面の機能)＜その８＞</h2>
+                <p>デザインページのプロパティを開き、Type of contentを選択し、「User」に変更する。<br>
+					この変更は、このプロフィールページに特定のユーザーの情報を持たせるという設定になる。</p>
+                    <div>
+                        <img src="images/blog10/image_1.jpg" alt="" width="300" height="175">
+                    </div>
+                <p>次に、プロフィール画像、名前、自己紹介をユーザーと紐づける。<br>
+					まず、Picture Uploaderのプロパティを開く。<br>
+					Dinamic imageをクリックすると青いデータベースタブが表示されるのでそれをクリックする。<br>
+					「Current Page User」、「's image」を選択する。</p>
+                    <div>
+                        <img src="images/blog10/image_2.jpg" alt="" width="300" height="175">
+                    </div>
+                <p>同様に名前のプロパティを開いて設定する。<br>
+					Initial contentをクリック、青いタブをクリックする。<br>
+					「Current Page User」、「's Memo」を選択する。</p>
+                    <div>
+                        <img src="images/blog10/image_3.jpg" alt="" width="300" height="175">
+                    </div>
+                <p>自己紹介のプロパティも開いて同様に設定する。<br>
+					Initial contentをクリック、青いタブをクリックする。<br>
+					「Current Page User」、「's Memo」を選択する。</p>
+                    <div>
+                        <img src="images/blog10/image_4.jpg" alt="" width="300" height="175">
+                    </div>
+                <p>次に、プロフィール画面のworkflowを設定する。<br>
+					最初にindexページからプロフィール画面に移動する機能を設定する。<br>
+					indexページのElements　treeのタブからGroupFocus iconMenuを選択する。<br>
+					プロフィールボタンのプロパティを開き、workflowを選択する。</p>
+                    <div>
+                        <img src="images/blog10/image_5.jpg" alt="" width="300" height="175">
+                    </div>
+                <p>画面が切り替わったら、Click here to add an actionをクリック、Navigationの「Go to page」を選択する。<br>
+					プロパティ内のDestinationを「profile」、Data to sendの「Current User」でプロフィールにユーザー情報を送る設定をする。</p>
+                    <div>
+                        <img src="images/blog10/image_6.jpg" alt="" width="300" height="175">
+                    </div>
+				<p>プロフィール画面に戻り、保存するボタンのworkflowをクリックし設定していく。</p>
+					<div>
+						<img src="images/blog10/image_7.jpg" alt="" width="300" height="175">
+					</div>
+				<p>画面が切り替わると、以前のログインボタンのworkflowが設定されているので変更する。<br>
+					Step1のLog the user inを削除し、新しくDataの「Make changes to thing」を選択する。<br>
+					表示されたプロパティのThing to changeを「Current Page User」を選択する。<br>
+					Change another fieldからユーザーの情報を書き換える項目を設定する。<br>
+					１つ目は、「image ＝ PictureUploader A's value」と設定する。<br>
+					２つ目は、「Name ＝ Input 名前's value」と設定する。<br>
+					３つ目は、「Memo = MultilineInput 自己紹介's value」に設定する。<br>
+					この設定により、プロフィール画面で変更した以上の情報が保存するボタンによって更新される。</p>
+					<div>
+						<img src="images/blog10/image_8.jpg" alt="" width="300" height="175">
+					</div>
+				<p>最後に戻るボタンのworkflowを設定する。
+					workflowのClick here to add an actionのNavigationから「Go to previous page」を選択。<br>
+					これで、一つ前のページに戻るという機能が追加される。</p>
+					<div>
+						<img src="images/blog10/image_9.jpg" alt="" width="300" height="175">
+					</div>
+				<p>previewページで実際動作を確認してみました！<br>
+					以下の画像のように登録情報が保存されボタンも機能していた。（画像は私の好きな馬です）</p>
+					<div>
+						<img src="images/blog10/image_10.jpg" alt="" width="300" height="175">
+					</div>
+    </div>
+
+				<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+    </body>
+</html>
